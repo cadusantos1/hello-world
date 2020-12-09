@@ -1,2 +1,2 @@
 # hello-world
- Projetos práticos
+ Projetos práticos apenas front-end.
