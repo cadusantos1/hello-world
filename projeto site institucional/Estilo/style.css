@@ -1,0 +1,434 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+/**boot CSS**/
+
+input{
+	border: 0;
+}
+
+img{
+	width: 100%;
+	max-width: 500px; 
+}
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto; 
+}
+
+.w33{
+	width: 25%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding: 0 10px;
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/** Estilização do site **/
+
+header{
+	padding: 20px 0;
+	background: #318798;
+}
+
+header .logo{
+	font-size: 23px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;	
+}
+
+.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	position: relative;
+	top: 6px;
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-weight: 300;
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav.desktop a{
+	transition: 1s; /*NESSE EX NÃO SE APLICA DEVIDO A COR*/
+	color: white;
+	text-decoration: none;
+}
+
+nav.desktop a:hover{
+	/*color: green; AQUI O EX DA LINHA 76 */
+	text-decoration: underline;
+} 
+
+section.banner-container{
+	width: 100%;
+	height: 600px;
+	background-size: cover; /*técnica de design responsivo*/
+	position: relative;
+}
+
+.banner-single{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;	
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2; /* ESTE VAI ANTES */
+	background-color: rgba(51,51,51,0.5);  
+}
+
+section.banner-container form{
+	width: 93%;
+	max-width: 600px;
+	position: absolute;
+	z-index: 3; /* ESTE VAI DEPOIS */
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%); /* TIRAR DIFERENÇA DE POSIÇÃO*/
+	-ms-transform: translate(-50%,-50%);
+} 
+
+section.banner-container form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-container form input[type=email]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+}
+
+section.banner-container	 form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: #318798;
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	border: 0;
+}
+
+section.descricao-autor{
+	padding: 40px 0;	
+}
+
+section.descricao-autor h2{
+	font-size: 28px;
+	/*font-weight: 400; DESNECESSÁRIO */
+	color: #444; 	
+}
+
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	margin-top: 10px;	
+}
+
+section.especialidades{
+	padding: 40px 0;
+	background: #E2E2E2; /* PQ NÃO ESTÁ PEGANDO??? */
+}
+
+section.especialidades h2.title{
+	font-size: 30px;
+	color: #666; 
+	font-weight: 400;
+	text-align: center;
+}
+
+.box-especialidade{
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.box-especialidade h3{
+	/** ESTE É O ICONE **/
+	font-size: 40px;
+	color: #318798;
+}
+
+.box-especialidade h4{
+	font-weight: 400;
+	color: #999;
+	font-size: 25px;
+}
+
+.box-especialidade p{
+	color: #444;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+section.extras{
+	padding: 30px 0;
+	background: #318798;
+}
+.servicos-container,.depoimentos-container{
+	padding: 0 50px;
+}
+
+section.extras .title{
+	color: white;
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.depoimento-single{
+	padding: 15px 0;
+	border-bottom: 1px solid #999;
+}
+
+p.depoimento-descricao{
+	font-size: 15px;
+	color: white;
+	font-weight: 300; /*UNNECESSARY*/
+}
+
+p.nome-autor{
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;	
+}
+
+.servicos ul{
+	margin: 20px 0;
+	/* list-style-position: inside; */
+}
+
+.servicos li{
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+
+}
+
+footer{
+	background: #E2E2E2;
+	padding: 30px 0;
+}
+
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;	
+}
+
+footer p{
+	color: #444;
+	text-align: center;
+	font-weight: 400;
+	font-size: 15px;	
+}
+
+section.erro-404 h2{
+	text-align: center;
+	color: #444;
+	font-weight: 400;
+	font-size: 30px;
+
+}
+
+section.erro-404 p{
+	text-align: center;
+	color: #444;
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+section.erro-404 a{
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.wraper-404{
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 50%;
+	position: absolute;
+}
+
+#map{
+	width: 100%;
+	height: 400px;	
+}
+
+.contato-container{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.contato-container input[type=text]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin: 8px 0;
+	padding-left: 8px;
+	font-size: 16px; 
+	max-width: 800px;
+	color: #444;
+}
+
+.contato-container textarea{
+	padding: 8px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin: 8px 0;
+	padding-left: 8px;
+	font-size: 16px; 
+	max-width: 800px;
+	color: #444;
+	resize: none;
+}
+
+.contato-container input[type=submit]{
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	background: #318798;
+	border: none;
+	cursor: pointer;
+}
+
+.bullets{
+	position: absolute;
+	z-index: 5;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%); /*CENTRALIZAR NO EIXO HORIZONTAL*/	
+}
+
+.bullets span{
+	margin: 0 8px;
+	display: inline-block; /*SPAN é display inline não podemos definir as dimensões, por isso*/
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #777;
+}
+
+.bullets span.active-slider{
+	background-color: white;
+}
+
+
+
+@media screen and (max-width: 768px){
+	img{
+		float: none !important; /**FAZ O NAV PRIORIZAR SOBRE OUTRAS REGRAS**/
+		display: block;
+		margin: 0 auto;
+	}
+	.w50{
+		padding: 20px;
+		width: 100%;
+	}
+	.w33{
+		width: 100%;
+		padding: 20px;
+	}
+	.box-especialidade{
+		/*padding: 40px 20px;*/
+		margin: 0;
+	}	
+}
+
+@media screen and (max-width: 700px){
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+
+	nav.mobile ul{
+		top: 73px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		display: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav.mobile li{
+		/*font-weight: 300;*/
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 17px;
+		padding: 8px 0;
+	}
+
+	nav.mobile li a{
+		display: block;
+		color: #444;
+		text-decoration: none;
+	}
+}
