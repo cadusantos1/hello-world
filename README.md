@@ -1,2 +1,2 @@
 # Projeto-mypage
- Projeto de página de apresentação personalizada .
+ Projeto práticos desenvolvidos com o prof. Guilherme Grillo, dankicode.
