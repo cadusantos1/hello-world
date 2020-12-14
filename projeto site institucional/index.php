@@ -21,7 +21,7 @@
 			if (filter_var($email, FILTER_VALIDATE_EMAIL)){
 				//Tudo certo, é um email
 				//Só enviar
-				$mail = new Email('smtp.gmail.com','cadu.negociosdigitais@gmail.com','Cadux1001','Carlos');
+				$mail = new Email('smtp.gmail.com','cadu.negociosdigitais@gmail.com','SENHA','Carlos');
 				$mail->addAdress('cadu.negociosdigitais@gmail.com','Carlos');
 				
 				$corpo = "E-mail cadastrado na home do site:<hr>$email";
