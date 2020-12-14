@@ -1,3 +1,4 @@
-# Projeto-mypage
- Projeto práticos desenvolvidos com o prof. Guilherme Grillo - dankicode.
+# Projetos práticos
+ Desenvolvidos com o prof. Guilherme Grillo - dankicode.
+ Contém bugs.
  
