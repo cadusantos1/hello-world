@@ -1,4 +1,4 @@
 # Projetos práticos
- Desenvolvidos com o prof. Guilherme Grillo - dankicode.
- Contém bugs.
+ Desenvolvidos no curso - desenvolvedor web master, dankicode.
+ Pode conter bugs.
  
